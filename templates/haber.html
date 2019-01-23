@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>haberler</title>
+</head>
+<body>
+
+
+	aaaaaa
+{% for news in haber %}
+    <div>
+        <p>{{ news.yayinlanma_tarihi }}</p>
+        <h1><a href="">{{ news.baslik }}</a></h1>
+        <p>{{ haber.icerik|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
+
+<button value="acaba">acaba</button>
+
+
+</body>
+</html>
