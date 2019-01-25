@@ -4,17 +4,15 @@
 	<title>haberler</title>
 </head>
 <body>
-
-
-	aaaaaa
-{% for news in haber %}
+{% for haber in haberler %}
     <div>
-        <p>{{ news.yayinlanma_tarihi }}</p>
-        <h1><a href="">{{ news.baslik }}</a></h1>
+        <h3><a href="">{{ haber.baslik }}</a></h3>
+        <p>{{ haber.yayinlanma_tarihi }}</p>
         <p>{{ haber.icerik|linebreaksbr }}</p>
     </div>
+    ******************************
 {% endfor %}
-
+<br>
 
 <button value="acaba">acaba</button>
 
