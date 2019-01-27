@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,8 +15,13 @@
 {% endfor %}
 <br>
 
-<button value="acaba">acaba</button>
-
-
+<button id="btn" value="acaba">acaba</button>
+{% block javascript %}
+	<script>
+		$('#btn').click(function(){
+			$('div').hide();
+		});
+	</script>
+{% endblock %}
 </body>
 </html>
