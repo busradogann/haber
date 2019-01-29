@@ -7,7 +7,7 @@
 <body>
 {% for haber in haberler %}
     <div>
-        <h3><a href="">{{ haber.baslik }}</a></h3>
+        <h3><a href="{% url 'detail' haber.pk %}">{{ haber.baslik }}</a></h3>
         <p>{{ haber.yayinlanma_tarihi }}</p>
         <p>{{ haber.icerik|linebreaksbr }}</p>
     </div>
